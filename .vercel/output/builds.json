@@ -18,5 +18,15 @@
         "framework": "nextjs"
       }
     }
-  ]
+  ],
+  "error": {
+    "name": "Error",
+    "stack": "Error: EPERM: operation not permitted, symlink 'getExperience.func' -> 'C:\\Users\\Даня\\Desktop\\Labs\\Courses\\Web-Development\\next-portfolio\\.vercel\\output\\functions\\api\\getPageInfo.func'",
+    "message": "EPERM: operation not permitted, symlink 'getExperience.func' -> 'C:\\Users\\Даня\\Desktop\\Labs\\Courses\\Web-Development\\next-portfolio\\.vercel\\output\\functions\\api\\getPageInfo.func'",
+    "errno": -4048,
+    "code": "EPERM",
+    "syscall": "symlink",
+    "path": "getExperience.func",
+    "dest": "C:\\Users\\Даня\\Desktop\\Labs\\Courses\\Web-Development\\next-portfolio\\.vercel\\output\\functions\\api\\getPageInfo.func"
+  }
 }

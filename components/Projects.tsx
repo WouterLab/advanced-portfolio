@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Project } from "../typings";
 import { urlFor } from "../sanity";
+import Link from "next/link";
 
 type Props = {
   projects: Project[];
@@ -36,6 +37,13 @@ export default function Projects({ projects }: Props) {
                 </span>{" "}
                 {project?.title}
               </h4>
+              <a
+                className='text-2xl mt-0 space-y-2'
+                href={project.linkToBuild}
+                target='_blank'
+                rel='noreferrer'>
+                <p className='text-center mt-4'>-- Link --</p>
+              </a>
 
               <div className='grid justify-items-center grid-cols-2 sm:flex items-center sm:space-x-2 sm:justify-center'>
                 {project?.technologies.map((technology) => (
