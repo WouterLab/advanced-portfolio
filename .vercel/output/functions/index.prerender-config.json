@@ -1,0 +1,12 @@
+{
+  "type": "Prerender",
+  "expiration": 10,
+  "group": 1,
+  "bypassToken": "66520bbbd4c45667763f4589d1bf7ce3",
+  "fallback": {
+    "type": "FileFsRef",
+    "mode": 33188,
+    "fsPath": "index.prerender-fallback.html"
+  },
+  "allowQuery": []
+}
