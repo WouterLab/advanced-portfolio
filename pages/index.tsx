@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import type { GetServerSideProps, GetStaticProps } from "next";
+import type { GetStaticProps } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import About from "../components/About";
@@ -74,7 +74,7 @@ const Home = ({ pageInfo, experiences, socials, skills, projects }: Props) => {
 
 export default Home;
 
-export const getServerSideProps: GetServerSideProps<Props> = async () => {
+export const getStaticProps: GetStaticProps<Props> = async () => {
   const pageInfo: PageInfo = await fetchPageInfo();
   const experiences: Experience[] = await fetchExperiences();
   const skills: Skill[] = await fetchSkills();
