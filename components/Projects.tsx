@@ -21,6 +21,7 @@ export default function Projects({ projects }: Props) {
           <div
             key={project._id}
             className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-full sm:h-screen'>
+            <p className='text-gray-500 uppercase tracking-[3px]'>Slide to see more</p>
             <motion.img
               className='mx-auto object-cover xl:w-[600px] md:w-96 sm:w-56'
               initial={{ opacity: 0 }}
