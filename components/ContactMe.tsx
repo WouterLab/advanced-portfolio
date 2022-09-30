@@ -22,19 +22,19 @@ export default function ContactMe({}: Props) {
       <div className='flex flex-col space-y-10 w-screen'>
         <h4 className='text-4xl font-semibold text-center mt-12 md:mt-0'>
           I have got just what you need.{" "}
-          <span className='decoration-[#F7AB0A]/50 underline'>Lets Talk</span>
+          <span className='decoration-[#eda200]/50 underline'>Lets Talk</span>
         </h4>
         <div className='space-y-10'>
           <div className='flex items-center space-x-5 justify-center'>
-            <PhoneIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse' />
+            <PhoneIcon className='text-[#eda200] h-7 w-7 animate-pulse' />
             <p className='text-2xl'>+79039109854</p>
           </div>
           <div className='flex items-center space-x-5 justify-center'>
-            <EnvelopeIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse' />
+            <EnvelopeIcon className='text-[#eda200] h-7 w-7 animate-pulse' />
             <p className='text-2xl'>dan1lpanov@mail.ru</p>
           </div>
           <div className='flex items-center space-x-5 justify-center'>
-            <MapPinIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse' />
+            <MapPinIcon className='text-[#eda200] h-7 w-7 animate-pulse' />
             <p className='text-2xl'>Moscow</p>
           </div>
         </div>
@@ -45,7 +45,7 @@ export default function ContactMe({}: Props) {
           <div className='flex-col sm:flex-row sm:space-x-2'>
             <input
               {...register("name")}
-              placeholder='Name'
+              placeholder='Имя'
               type='text'
               className='contactInput'
             />
@@ -56,12 +56,12 @@ export default function ContactMe({}: Props) {
               className='contactInput'
             />
           </div>
-          <input {...register('subject')} placeholder='Subject' type='text' className='contactInput' />
-          <textarea {...register('message')} placeholder='Message' className='contactInput' />
+          <input {...register('subject')} placeholder='Тема' type='text' className='contactInput' />
+          <textarea {...register('message')} placeholder='Сообщение' className='contactInput' />
           <button
             type='submit'
-            className='bg-[#F7AB0A] py-5 rounded-md text-black font-bold text-lg'>
-            Submit
+            className='bg-[#eda200] py-5 rounded-md text-black font-bold text-lg'>
+            Отправить
           </button>
         </form>
       </div>

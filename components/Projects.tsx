@@ -16,7 +16,7 @@ export default function Projects({ projects }: Props) {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       className='h-full md:h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0'>
-      <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
+      <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#eda200]/80'>
         {projects?.map((project, i) => (
           <div
             key={project._id}
@@ -32,27 +32,25 @@ export default function Projects({ projects }: Props) {
             />
             <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
               <h4 className='text-4xl font-semibold text-center'>
-                <span className='underline decoration-[#F7AB0A]/50'>
+                <span className='underline decoration-[#eda200]/50'>
                   Case Study {i + 1} of {projects.length}:
                 </span>{" "}
                 {project?.title}
               </h4>
-              <a
-                className='text-2xl mt-0 space-y-2'
-                href={project.linkToBuild}
-                target='_blank'
-                rel='noreferrer'>
-                <p className='text-center mt-4'>-- Link --</p>
-              </a>
 
               <div className='grid justify-items-center grid-cols-2 sm:flex items-center sm:space-x-2 sm:justify-center'>
                 {project?.technologies.map((technology) => (
-                  <img
-                    className='h-10 w-10'
+                  <a
                     key={technology._id}
-                    src={urlFor(technology.image).url()}
-                    alt='tech'
-                  />
+                    href={project.linkToBuild}
+                    target='_blank'
+                    rel='noreferrer'>
+                    <img
+                      className='h-10 w-10'
+                      src={urlFor(technology.image).url()}
+                      alt='tech'
+                    />
+                  </a>
                 ))}
               </div>
 
@@ -63,7 +61,7 @@ export default function Projects({ projects }: Props) {
           </div>
         ))}
       </div>
-      <div className='w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12'></div>
+      <div className='w-full absolute top-[30%] bg-[#eda200]/10 left-0 h-[500px] -skew-y-12'></div>
     </motion.div>
   );
 }

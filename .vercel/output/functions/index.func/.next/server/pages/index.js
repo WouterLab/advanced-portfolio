@@ -37,10 +37,6 @@ function About({ pageInfo  }) {
         },
         className: "h-full sm:h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center",
         children: [
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
-                className: "mb-8 md:mb-0 top-24 uppercase tracking-[20px] text-gray-500 text-2xl md:absolute",
-                children: "About"
-            }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(framer_motion__WEBPACK_IMPORTED_MODULE_2__.motion.img, {
                 initial: {
                     x: -200,
@@ -69,7 +65,7 @@ function About({ pageInfo  }) {
                             "Here is a",
                             " ",
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                className: "underline decoration-[#F7AB0A]/50",
+                                className: "underline decoration-[#eda200]/50",
                                 children: "little"
                             }),
                             " ",
@@ -152,7 +148,7 @@ function BackgroundCircles({}) {
                 className: "absolute border border-[#333333] rounded-full h-[500px] w-[500px] mt-52"
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: "absolute border border-[#F7AB0A] rounded-full opacity-20 h-[650px] w-[650px] mt-52 animate-pulse"
+                className: "absolute border border-[#eda200] rounded-full opacity-20 h-[650px] w-[650px] mt-52 animate-pulse"
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                 className: "absolute border border-[#333333] rounded-full h-[800px] w-[800px] mt-52"
@@ -202,7 +198,7 @@ function ContactMe({}) {
                         "I have got just what you need.",
                         " ",
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                            className: "decoration-[#F7AB0A]/50 underline",
+                            className: "decoration-[#eda200]/50 underline",
                             children: "Lets Talk"
                         })
                     ]
@@ -214,7 +210,7 @@ function ContactMe({}) {
                             className: "flex items-center space-x-5 justify-center",
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_heroicons_react_24_solid__WEBPACK_IMPORTED_MODULE_3__.PhoneIcon, {
-                                    className: "text-[#F7AB0A] h-7 w-7 animate-pulse"
+                                    className: "text-[#eda200] h-7 w-7 animate-pulse"
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                     className: "text-2xl",
@@ -226,7 +222,7 @@ function ContactMe({}) {
                             className: "flex items-center space-x-5 justify-center",
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_heroicons_react_24_solid__WEBPACK_IMPORTED_MODULE_3__.EnvelopeIcon, {
-                                    className: "text-[#F7AB0A] h-7 w-7 animate-pulse"
+                                    className: "text-[#eda200] h-7 w-7 animate-pulse"
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                     className: "text-2xl",
@@ -238,7 +234,7 @@ function ContactMe({}) {
                             className: "flex items-center space-x-5 justify-center",
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_heroicons_react_24_solid__WEBPACK_IMPORTED_MODULE_3__.MapPinIcon, {
-                                    className: "text-[#F7AB0A] h-7 w-7 animate-pulse"
+                                    className: "text-[#eda200] h-7 w-7 animate-pulse"
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                     className: "text-2xl",
@@ -257,7 +253,7 @@ function ContactMe({}) {
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
                                     ...register("name"),
-                                    placeholder: "Name",
+                                    placeholder: "Имя",
                                     type: "text",
                                     className: "contactInput"
                                 }),
@@ -271,19 +267,19 @@ function ContactMe({}) {
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
                             ...register("subject"),
-                            placeholder: "Subject",
+                            placeholder: "Тема",
                             type: "text",
                             className: "contactInput"
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("textarea", {
                             ...register("message"),
-                            placeholder: "Message",
+                            placeholder: "Сообщение",
                             className: "contactInput"
                         }),
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                             type: "submit",
-                            className: "bg-[#F7AB0A] py-5 rounded-md text-black font-bold text-lg",
-                            children: "Submit"
+                            className: "bg-[#eda200] py-5 rounded-md text-black font-bold text-lg",
+                            children: "Отправить"
                         })
                     ]
                 })
@@ -318,7 +314,7 @@ framer_motion__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.the
 
 function ExperienceCard({ experience  }) {
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("article", {
-        className: "flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] md:w-[500px] xl:w-[700x] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden",
+        className: "h-screen flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] md:w-[500px] xl:w-[700x] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-y-auto scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#eda200]/80",
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(framer_motion__WEBPACK_IMPORTED_MODULE_2__.motion.img, {
                 initial: {
@@ -351,7 +347,7 @@ function ExperienceCard({ experience  }) {
                         children: experience.company
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "flex flex-wrap sm:space-x-2 space-y-2 my-2",
+                        className: "flex flex-wrap sm:space-x-2 space-y-2 sm:space-y-0 my-2",
                         children: experience.technologies.map((technology)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                                 className: "h-10 w-10 rounded-full",
                                 src: (0,_sanity__WEBPACK_IMPORTED_MODULE_3__/* .urlFor */ .uH)(technology.image).url(),
@@ -531,7 +527,7 @@ function Hero({ pageInfo  }) {
                                 children: text
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_simple_typewriter__WEBPACK_IMPORTED_MODULE_3__.Cursor, {
-                                cursorColor: "#F7AB0A"
+                                cursorColor: "#eda200"
                             })
                         ]
                     }),
@@ -542,28 +538,28 @@ function Hero({ pageInfo  }) {
                                 href: "#about",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                     className: "heroButton",
-                                    children: "About"
+                                    children: "Обо мне"
                                 })
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
                                 href: "#experience",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                     className: "heroButton",
-                                    children: "Experience"
+                                    children: "Опыт работы"
                                 })
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
                                 href: "#skills",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                     className: "heroButton",
-                                    children: "Skills"
+                                    children: "Навыки"
                                 })
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
                                 href: "#projects",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                                     className: "heroButton",
-                                    children: "Projects"
+                                    children: "Проекты"
                                 })
                             })
                         ]
@@ -612,7 +608,7 @@ function Projects({ projects  }) {
         className: "h-full md:h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0",
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: "relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80",
+                className: "relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#eda200]/80",
                 children: projects?.map((project, i)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                         className: "w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-full sm:h-screen",
                         children: [
@@ -640,7 +636,7 @@ function Projects({ projects  }) {
                                         className: "text-4xl font-semibold text-center",
                                         children: [
                                             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
-                                                className: "underline decoration-[#F7AB0A]/50",
+                                                className: "underline decoration-[#eda200]/50",
                                                 children: [
                                                     "Case Study ",
                                                     i + 1,
@@ -653,22 +649,17 @@ function Projects({ projects  }) {
                                             project?.title
                                         ]
                                     }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
-                                        className: "text-2xl mt-0 space-y-2",
-                                        href: project.linkToBuild,
-                                        target: "_blank",
-                                        rel: "noreferrer",
-                                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                            className: "text-center mt-4",
-                                            children: "-- Link --"
-                                        })
-                                    }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                         className: "grid justify-items-center grid-cols-2 sm:flex items-center sm:space-x-2 sm:justify-center",
-                                        children: project?.technologies.map((technology)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                                                className: "h-10 w-10",
-                                                src: (0,_sanity__WEBPACK_IMPORTED_MODULE_3__/* .urlFor */ .uH)(technology.image).url(),
-                                                alt: "tech"
+                                        children: project?.technologies.map((technology)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                href: project.linkToBuild,
+                                                target: "_blank",
+                                                rel: "noreferrer",
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                    className: "h-10 w-10",
+                                                    src: (0,_sanity__WEBPACK_IMPORTED_MODULE_3__/* .urlFor */ .uH)(technology.image).url(),
+                                                    alt: "tech"
+                                                })
                                             }, technology._id))
                                     }),
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
@@ -681,7 +672,7 @@ function Projects({ projects  }) {
                     }, project._id))
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: "w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12"
+                className: "w-full absolute top-[30%] bg-[#eda200]/10 left-0 h-[500px] -skew-y-12"
             })
         ]
     });
@@ -784,7 +775,7 @@ function Skills({ skills  }) {
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
                 className: "mb-8 mt-12 md:mt-0 md:mb-8 top-36 uppercase tracking-[3px] text-gray-500 text-sm",
-                children: "Hover over a skill for current proficiency"
+                children: "Hover or tap over a skill for current proficiency"
             }),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                 className: "grid grid-cols-3 sm:grid-cols-5 gap-5 mt-8",
@@ -839,7 +830,7 @@ function WorkExperience({ experiences  }) {
         },
         className: "h-full sm:h-screen flex relative overflow-hidden flex-col text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center",
         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-            className: "w-full flex justify-between space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80",
+            className: "w-full flex justify-between space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#eda200]/80",
             children: experiences?.map((experience)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_ExperienceCard__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
                     experience: experience
                 }, experience._id))
