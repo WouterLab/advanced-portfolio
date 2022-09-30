@@ -316,6 +316,10 @@ function ExperienceCard({ experience  }) {
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("article", {
         className: "h-screen flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] md:w-[500px] xl:w-[700x] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-y-auto scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#eda200]/80",
         children: [
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                className: "text-gray-500 uppercase tracking-[3px]",
+                children: "Slide to see more"
+            }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(framer_motion__WEBPACK_IMPORTED_MODULE_2__.motion.img, {
                 initial: {
                     y: -100,
@@ -496,7 +500,7 @@ _BackgroundCircles__WEBPACK_IMPORTED_MODULE_5__ = (__webpack_async_dependencies_
 function Hero({ pageInfo  }) {
     const [text, count] = (0,react_simple_typewriter__WEBPACK_IMPORTED_MODULE_3__.useTypewriter)({
         words: [
-            `Привет, меня зовут Даня`,
+            `Привет, я Даня`,
             "Guy-who-loves-Coffee.tsx",
             "<ButLoves ToCodeMore />", 
         ],
@@ -612,6 +616,10 @@ function Projects({ projects  }) {
                 children: projects?.map((project, i)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                         className: "w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-full sm:h-screen",
                         children: [
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                className: "text-gray-500 uppercase tracking-[3px]",
+                                children: "Slide to see more"
+                            }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(framer_motion__WEBPACK_IMPORTED_MODULE_2__.motion.img, {
                                 className: "mx-auto object-cover xl:w-[600px] md:w-96 sm:w-56",
                                 initial: {
